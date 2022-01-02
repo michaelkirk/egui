@@ -82,7 +82,7 @@ impl super::View for CodeEditor {
             ui.fonts().layout_job(layout_job)
         };
 
-        egui::ScrollArea::vertical().show(ui, |ui| {
+        egui::ScrollArea::horizontal().show(ui, |ui| {
             ui.add(
                 egui::TextEdit::multiline(code)
                     .text_style(egui::TextStyle::Monospace) // for cursor height

@@ -105,7 +105,7 @@ fn huge_content_painter(ui: &mut egui::Ui) {
     let row_height = ui.fonts()[text_style].row_height() + ui.spacing().item_spacing.y;
     let num_rows = 10_000;
 
-    ScrollArea::vertical()
+    ScrollArea::horizontal()
         .auto_shrink([false; 2])
         .show_viewport(ui, |ui, viewport| {
             ui.set_height(row_height * num_rows as f32);

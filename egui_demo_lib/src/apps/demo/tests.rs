@@ -400,7 +400,7 @@ impl super::Demo for WindowResizeTest {
 
         Window::new("↔ resizable + scroll")
             .open(open)
-            .vscroll(true)
+            .hscroll(true)
             .resizable(true)
             .default_height(300.0)
             .show(ctx, |ui| {
